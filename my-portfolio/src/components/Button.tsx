@@ -4,13 +4,15 @@ import React from 'react'
 
 type Props = {
   content:string,
-  type:'red'|'gray'
+  type:'red'|'gray',
+  redirect:string
+
 }
 
 
-const Button = ({content,type}: Props) => {
+const Button = ({content,type,redirect}: Props) => {
   return (
-    <Link href={'/contatos'} className={type === 'red' ? 'w-[150px] h-[40px] border border-[#C778DD] px-4 py-2 text-base text-white font-medium': 'w-[150px] h-[40px] border border-[#ABB2BF] px-4 py-2 text-base text-white font-medium'}> {content} </Link>
+    <Link href={redirect} className={type === 'red' ? 'w-[150px] h-[40px] border border-[#C778DD] px-4 py-2 text-base text-white font-medium': 'w-[150px] h-[40px] border border-[#ABB2BF] px-4 py-2 text-base text-white font-medium'}> {content} </Link>
   )
 }
 

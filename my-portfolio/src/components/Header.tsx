@@ -9,13 +9,13 @@ type Props = {}
 const Header = (props: Props) => {
   const pathname = usePathname(); 
   return (
-    <div className='flex'>
-      <div className='flex flex-col ml-8 items-center justify-center'>
-        <Image src={'/line.svg'} alt='line' width={2} height={192}></Image>
+    <div className='flex h-28'>
+      <div className='flex flex-col ml-8 items-center'>
+        <Image src={'/line.svg'} alt='line' width={3} height={192}/> 
         <Link href={" https://github.com/PedroSantanaa"}><Image src={'/github.svg'} alt='github' width={40} height={40}/></Link>
         <Link href={"https://www.linkedin.com/in/pedro-santana-7305151a5/"}><Image src={'linkedin.svg'} alt='linkedin' width={36} height={36}/></Link>
       </div>
-      <div className='w-[1024px] mx-auto pt-8 pb-2 flex justify-between'>
+      <div className='w-[1500px] mx-auto pt-8 pb-2 flex justify-between self-start'>
         <div className='text-white font-bold flex gap-1'>
           <Link href={"/"}><Image src={"/letraP.png"} alt='letraP' width={25} height={25}></Image></Link>
           <Link href={"/"} className='text-base'>Pedro</Link>
