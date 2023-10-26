@@ -21,7 +21,7 @@ const Contact = () => {
               <p className='text-gray-400'>pedro.ferraz01@gmail.com</p>
             </div>
             <div className='flex gap-2'>
-              <Link href={"https://www.linkedin.com/in/pedro-santana-7305151a5/"}><LinkedInIcon className='text-gray-400'/></Link>
+              <Link href={"https://www.linkedin.com/in/pedro-santana-7305151a5/"} target='_blank'><LinkedInIcon className='text-gray-400'/></Link>
               <p className='text-gray-400'>in/pedro-santana-7305151a5</p>
             </div>
           </div>
