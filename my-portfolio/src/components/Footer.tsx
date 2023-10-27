@@ -9,9 +9,9 @@ type Props = {}
 
 const Footer = (props: Props) => {
   return (
-    <div className='border-t border-gray-400 py-8 flex flex-col justify-center items-center'>
-      <div className='flex justify-between w-[1200px]'>
-        <div className='pb-12'>
+    <div className='border-t border-gray-400 py-8 flex flex-col gap-10 justify-center items-center mt-36'>
+      <div className='flex flex-wrap gap-4 justify-center items-center 2xl:justify-between 2xl:w-[1200px]'>
+        <div className='2xl:pb-12'>
           <div className='flex gap-2 pb-4'>
             <Image src={"/letraP.png"} alt='letraP' width={10} height={10}/>
             <p className='font-bold text-white'>Pedro</p>
@@ -21,7 +21,7 @@ const Footer = (props: Props) => {
         </div>
         <div className='flex flex-col gap-3'>
           <p className='text-white font-bold text-2xl'>Midia</p>
-          <div className='flex gap-2'>
+          <div className='flex gap-2 '>
             <Link href={'https://github.com/PedroSantanaa'} target='_blank'><GitHubIcon className='text-gray-400'/></Link>
             <Link href={'https://www.linkedin.com/in/pedro-santana-7305151a5/'} target='_blank'><LinkedInIcon className='text-gray-400'/></Link>
             <Link href={'mailto:pedro.ferraz01@gmail.com'} target='_blank'><EmailIcon className='text-gray-400'/></Link>

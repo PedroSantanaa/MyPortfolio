@@ -12,7 +12,7 @@ type Props = {
 
 const SkillCard = ({data}: Props) => {
   return (
-    <div className='grid grid-rows-2 grid-flow-col gap-4 mx-8 w-[600px]'>
+    <div className='grid grid-rows-5 md:grid-rows-3 lg:grid-rows-2 grid-flow-col gap-4 mx-8 2xl:w-[600px]'>
       {data.map((item,idx)=>{
         return(
           <div key={idx} className='border border-gray-400 flex-col justify-start items-start inline-flex w-[200px]'>       

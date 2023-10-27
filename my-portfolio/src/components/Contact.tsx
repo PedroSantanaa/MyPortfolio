@@ -5,14 +5,14 @@ import Link from 'next/link';
 
 const Contact = () => {
   return (
-    <div className='w-[1500px] flex flex-col gap-5 mx-auto mt-36'>
+    <div className='w-[88%] 2xl:w-[1500px] flex flex-col gap-5 mx-auto mt-8 2xl:mt-36'>
       <div className='mb-14 flex gap-6'>
         <div className='flex gap-4'>
           <h1 className='text-white font-medium text-3xl'><span className='text-[#C778DD]'>#</span>Contato</h1>
-          <Image src={'/line2.svg'} alt='line2' width={800} height={2}/>
+          <Image src={'/line2.svg'} alt='line2' width={800} height={2} className='hidden lg:block lg:w-[80%]'/>
         </div>
     </div>
-        <div className='flex justify-between'>
+        <div className='flex flex-wrap gap-8 2xl:justify-between'>
           <p className=' w-[600px] text-gray-400'>Estou interessado em contrato CLT ou PJ. Entretanto, se voce tem algum freelancer sinta-se a vontade para me contatar</p>
           <div className='flex flex-col gap-4 border border-gray-400 p-4'>
             <p className='text-white'>Mande mensagem pro aqui</p>
