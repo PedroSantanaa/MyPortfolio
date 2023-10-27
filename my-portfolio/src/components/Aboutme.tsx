@@ -19,7 +19,7 @@ const Aboutme = () => {
           </div>
       </div>
       <div >        
-        <Image src={'/fotoSobre.png'} alt='foto' width={339} height={507} className='border-b border-[#C778DD] '/>
+        <Image src={'/file-removebg-preview.png'} alt='foto' width={339} height={507} className='border-b border-[#C778DD] '/>
       </div>
     </div>
   )
