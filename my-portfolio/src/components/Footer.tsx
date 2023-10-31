@@ -20,7 +20,7 @@ const Footer = (props: Props) => {
           <p className='text-gray-400'>Desenvolvedor Fullstack e Devops/Cibersegurança Entusiasta</p>
         </div>
         <div className='flex flex-col gap-3'>
-          <p className='text-white font-bold text-2xl'>Midia</p>
+          <p className='text-white font-bold text-2xl'>Mídia</p>
           <div className='flex gap-2 '>
             <Link href={'https://github.com/PedroSantanaa'} target='_blank'><GitHubIcon className='text-gray-400'/></Link>
             <Link href={'https://www.linkedin.com/in/pedro-santana-7305151a5/'} target='_blank'><LinkedInIcon className='text-gray-400'/></Link>
