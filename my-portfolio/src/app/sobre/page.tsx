@@ -9,7 +9,7 @@ type Props = {}
 const page = (props: Props) => {
   return (
     <div>
-      <Aboutme/>
+      <Aboutme titleIcon='/'/>
       <div className='w-[88%] 2xl:w-[1500px] 2xl:h-[408px] mx-auto mt-36'>
         <div className='flex gap-4'>
           <h1 className='text-white font-medium text-3xl'><span className='text-[#C778DD]'>#</span>Experiências</h1>
