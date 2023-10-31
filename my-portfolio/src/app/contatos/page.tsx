@@ -5,7 +5,7 @@ type Props = {}
 
 const page = (props: Props) => {
   return (
-    <div>
+    <div className='h-[454px]'>
       <Contact titleIcon='/'/>
       </div>
   )
