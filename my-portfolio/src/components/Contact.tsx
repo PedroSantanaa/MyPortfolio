@@ -20,7 +20,7 @@ const Contact = ({titleIcon}:Props) => {
         <div className='flex flex-wrap gap-8 2xl:justify-between'>
           <p className=' w-[600px] text-gray-400'>Estou interessado em contrato CLT ou PJ. Entretanto, se voce tem algum freelancer sinta-se a vontade para me contatar</p>
           <div className='flex flex-col gap-4 border border-gray-400 p-4'>
-            <p className='text-white'>Mande mensagem pro aqui</p>
+            <p className='text-white'>Mande mensagem por aqui</p>
             <div className='flex gap-2'>
               <Link href={'mailto:pedro.ferraz01@gmail.com'}>
                 <EmailIcon className='text-gray-400'/>

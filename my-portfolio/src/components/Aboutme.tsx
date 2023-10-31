@@ -17,8 +17,8 @@ const Aboutme = ({titleIcon}:Props) => {
         </div>
         <div className='flex flex-col gap-7 w-[88%] lg:w-[450px] 2xl:w-[800px] '>
             <p className='text-gray-400'>Olá, meu nome é Pedro Santana Ferraz de Oliveira!!</p>
-            <p className='text-gray-400 text-xs 2xl:text-base'>Eu sou um desenvolvedor fullstack auto didata, moro na Bahia,Brasil. Eu posso desenvolver aplicações responsivas e funcionais desde o rascunho até o projeto final e de forma objetiva e perfomática, tanto aplicações front-end quanto back-end.</p>
-            <p className='text-gray-400 text-xs 2xl:text-base'>Transformando minha paixao por programação que começou em 2018 em projetos reais e de grande valor. Venho sempre estudando para me manter atualizado nas tecnologias. Além disso, sou um entusiasta em Cibersegurança/Devops.</p>
+            <p className='text-gray-400 text-xs 2xl:text-base'>Eu sou um desenvolvedor fullstack auto didata, moro na bahia,Brasil. Eu posso desenvolver aplicações responsivas e funcionais desde o rascunho até o projeto final e de forma objetiva e perfomática, tanto aplicações front-end quanto back-end.</p>
+            <p className='text-gray-400 text-xs 2xl:text-base'>Transformando minha paixão por programação que começou em 2018 em projetos reais e de grande valor. Venho sempre estudando para me manter atualizado nas tecnologias. Além disso, sou um entusiasta em Cibersegurança/Devops.</p>
             <Button type='red' content='Experiências ->' redirect='/sobre' />
           </div>
       </div>

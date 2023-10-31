@@ -10,12 +10,12 @@ type Props = {}
 const Footer = (props: Props) => {
   return (
     <div className='border-t border-gray-400 py-8 flex flex-col gap-10 justify-center items-center mt-36'>
-      <div className='flex flex-wrap gap-4 justify-center items-center 2xl:justify-between 2xl:w-[1200px]'>
+      <div className='flex flex-wrap gap-4 justify-center items-center 2xl:justify-between w-[88%] 2xl:w-[1200px]'>
         <div className='2xl:pb-12'>
-          <div className='flex gap-2 pb-4'>
+          <div className='flex gap-2 pb-4 justify-center items-center lg:justify-normal'>
             <Image src={"/letraP.png"} alt='letraP' width={10} height={10}/>
-            <p className='font-bold text-white'>Pedro</p>
-            <p className='text-gray-400'>pedro.ferraz01@gmail.com</p>
+            <p className='font-bold text-white text-xs sm:text-base'>Pedro</p>
+            <p className='text-gray-400 text-xs sm:text-base'>pedro.ferraz01@gmail.com</p>
           </div>
           <p className='text-gray-400'>Desenvolvedor Fullstack e Devops/Cibersegurança Entusiasta</p>
         </div>
