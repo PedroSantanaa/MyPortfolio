@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 
 
-const projectsBase = [{imageUrl:'/todolist.png',stack:'React Typescript NestJS Auth Postgress Tailwind',title:"Todo List",desc:"Todo List FullStack",urlSite:"https://todo-list-ps.vercel.app/login",urlGithub:'https://github.com/PedroSantanaa/Todo-List'},{imageUrl:'/mtg.jpeg',stack:'C# .Net Swagger Entity Framework MySQL',title:"API MTG Cards",desc:"API do Magic Cards",urlGithub:'MTG_WEBAPI_NET'},{imageUrl:'/commerce.png',stack:'React Typescript LocalStorage CSS Modules',title:"E-Commerce ",desc:"E-Commerce com local storage",urlSite:"https://e-commerce-doces.vercel.app/",urlGithub:'https://github.com/PedroSantanaa/e-commerce-doces'}]
+const projectsBase = [{imageUrl:'/todolist.png',stack:'React Typescript NestJS Auth Postgress Tailwind',title:"Todo List",desc:"Todo List FullStack",urlSite:"https://todo-list-ps.vercel.app/login",urlGithub:'https://github.com/PedroSantanaa/Todo-List'},{imageUrl:'/mtg.png',stack:'C# .Net Swagger Entity Framework MySQL',title:"API MTG Cards",desc:"API do Magic Cards",urlGithub:'MTG_WEBAPI_NET'},{imageUrl:'/commerce.png',stack:'React Typescript LocalStorage CSS Modules',title:"E-Commerce ",desc:"E-Commerce com local storage",urlSite:"https://e-commerce-doces.vercel.app/",urlGithub:'https://github.com/PedroSantanaa/e-commerce-doces'}]
 
 type Props={
   titleIcon:string
