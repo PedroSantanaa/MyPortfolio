@@ -10,7 +10,7 @@ type Props={
 
 const Contact = ({titleIcon}:Props) => {
   return (
-    <div className='w-[88%] 2xl:w-[1500px] flex flex-col gap-5 mx-auto mt-8 2xl:mt-36'>
+    <div id='contato' className='w-[88%] 2xl:w-[1500px] flex flex-col gap-5 mx-auto mt-8 2xl:mt-36'>
       <div className='mb-14 flex gap-6'>
         <div className='flex gap-4'>
           <h1 className='text-white font-medium text-3xl'><span className='text-[#C778DD]'>{titleIcon}</span>contatos</h1>

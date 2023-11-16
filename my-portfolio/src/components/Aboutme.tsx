@@ -9,7 +9,7 @@ type Props={
 
 const Aboutme = ({titleIcon}:Props) => {
   return (
-    <div className='w-[88%] 2xl:w-[1500px] 2xl:h-[508px] mx-auto mt-8 2xl:mt-36 flex flex-wrap justify-center items-center lg:justify-between '>
+    <div id='sobre' className='w-[88%] 2xl:w-[1500px] 2xl:h-[508px] mx-auto mt-8 2xl:mt-36 flex flex-wrap justify-center items-center lg:justify-between '>
       <div className='mb-14 flex flex-col gap-6'>
         <div className='flex gap-4'>
           <h1 className='text-white font-medium text-3xl'><span className='text-[#C778DD]'>{titleIcon}</span>sobre mim</h1>

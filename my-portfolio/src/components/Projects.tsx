@@ -23,7 +23,7 @@ type Props={
 
 const Projects = ({titleIcon,title,projects}:Props) => {
   return (
-    <div className='2xl:w-[1500px] w-[88%] mx-auto mt-8 md:mt-36'>
+    <div id='projects' className='2xl:w-[1500px] w-[88%] mx-auto mt-8 md:mt-36'>
       {title ? (
         <div className='flex gap-4 mb-14'>
           <h1 className='text-white font-medium text-3xl'><span className='text-[#C778DD]'>{titleIcon}</span>{title}</h1>

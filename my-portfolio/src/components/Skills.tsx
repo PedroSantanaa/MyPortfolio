@@ -8,7 +8,7 @@ type Props = {}
 const skills = [{title : 'Linguagens', content: 'Javascript Typescript Python C#'}, {title:'Bancos de Dados', content:'MySQL Postgres SqlServer'}, {title:'Ferramentas',content:'VSCode Visual Studio Linux Docker Jenkins Git Figma Github Actions,AWS'}, {title:'Frameworks',content: 'React Express.js NestJs Next.js  '}, {title:'Outros',content:' HTML CSS TAILWINDCSS SCSS BOOTSTRAP'},{title:'Linguas',content:'Português Nativo Inglês Avançado Espanhol Básico'}]
 const Skills = (props: Props) => {
   return (
-    <div className='w-[88%] 2xl:w-[1500px] mx-auto mt-8 2xl:mt-36'>
+    <div id='skills' className='w-[88%] 2xl:w-[1500px] mx-auto mt-8 2xl:mt-36'>
       <div className='mb-14 flex flex-wrap justify-between'>
         <div className='flex gap-4'>
           <h1 className='text-white font-medium text-3xl'><span className='text-[#C778DD]'>#</span>skills</h1>

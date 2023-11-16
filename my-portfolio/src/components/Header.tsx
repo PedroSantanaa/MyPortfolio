@@ -15,6 +15,7 @@ const Header = (props: Props) => {
   };
   return (
     <div id='top' className='fixed top-0 left-0 right-0 z-50 flex h-20 bg-[#000000]'>
+    
       <div className='w-[88%] 2xl:w-[1500px] mx-auto pb-2 flex px-2 justify-between self-start'>
         <div className=''>
           <Link href={"#top"}><Image src={"/logoPedro.svg"} alt='logoP' width={206} height={92}></Image></Link>
