@@ -21,7 +21,7 @@ const Header = (props: Props) => {
           <Link href={"#top"}><Image src={"/logoPedro.svg"} alt='logoP' width={206} height={92}></Image></Link>
         </div>
         <div>          
-        <div className='lg:hidden'>
+        <div className='lg:hidden pt-7'>
           <Image src={'/hamburguer.svg'} alt='menuHamburguer' width={24} height={24} onClick={toggleMenu} className='cursor-pointer'/>
            <Modal
               open={menuOpen}
