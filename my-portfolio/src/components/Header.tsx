@@ -14,24 +14,11 @@ const Header = (props: Props) => {
 
   };
   return (
-<<<<<<< HEAD
     <div id='top' className='fixed top-0 left-0 right-0 z-50 flex h-20 bg-[#000000]'>
     
       <div className='w-[88%] 2xl:w-[1500px] mx-auto pb-2 flex px-2 justify-between self-start'>
         <div className=''>
           <Link href={"#top"}><Image src={"/logoPedro.svg"} alt='logoP' width={206} height={92}></Image></Link>
-=======
-    <div className='flex h-12'>
-      <div className='hidden lg:flex lg:flex-col lg:mr-12 lg:ml-4 lg:items-center'>
-        <Image src={'/line.svg'} alt='line' width={3} height={192}/> 
-        <Link href={" https://github.com/PedroSantanaa"}><Image src={'/github.svg'} alt='github' width={40} height={40}/></Link>
-        <Link href={"https://www.linkedin.com/in/pedro-santana-7305151a5/"}><Image src={'linkedin.svg'} alt='linkedin' width={36} height={36}/></Link>
-      </div>
-      <div className='w-[88%] 2xl:w-[1500px] mx-auto pt-8 pb-2 flex px-2 justify-between self-start fixed top-0 left-0 right-0 z-50 bg-[#282C33] '>
-        <div className='text-white font-bold flex gap-1'>
-          <Link href={"/"}><Image src={"/letraP.png"} alt='letraP' width={25} height={25}></Image></Link>
-          <Link href={"/"} className='text-base' >Pedro</Link>
->>>>>>> 416a2b95bdf5f1c456259eeadb3a28140ed7a539
         </div>
         <div>          
         <div className='lg:hidden'>
