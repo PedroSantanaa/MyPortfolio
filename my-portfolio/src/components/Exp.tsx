@@ -13,18 +13,25 @@ function Exp({}: Props) {
     const jobText=text?.split(' ')[0]
 
     if(jobText){
-      setJob(jobText)
-      }
+      if(!job){
+        setJob(jobText)
+      }else{
+        if(job===jobText){
+          setJob('')
+          }else{  
+            setJob(jobText)
+          }
+          }}
   }
 
   return (
     <div className='flex flex-col md:flex-row gap-10 lg:gap-28 mt-14'>
       <div className='p-10 flex flex-col gap-10'>
         {experiencias.map((exp)=>(
-          <span key={exp.company} onClick={handleJob} className={`text-gray-400 font-bold lg:text-xl cursor-pointer hover:border border-none hover:bg-[#C778DD33] rounded p-3 flex justify-between w-[200px] lg:w-[300px] group ${job === exp.company ? 'border border-none bg-[#C778DD33]' : ''}`}>{exp.company} <p className={`opacity-0 group-hover:opacity-100 ${job === exp.company ? 'opacity-100' : ''}`}> {'>'} </p> </span>
+          <span key={exp.company} onClick={handleJob} className={`text-black font-bold lg:text-xl cursor-pointer hover:border border-none hover:bg-[#C778DD33] rounded p-3 flex justify-between w-[200px] lg:w-[300px] group ${job === exp.company ? 'border border-none bg-[#C778DD33]' : ''}`}>{exp.company} <p className={`opacity-0 group-hover:opacity-100 ${job === exp.company ? 'opacity-100' : ''}`}> {'>'} </p> </span>
         ))}
       </div>
-      <div className='text-gray-400'>
+      <div className='text-black'>
         {job && experiencias.filter((exp)=>exp.company===job).map((exp)=>(
           <div key={exp.company}>
             <div className='flex flex-col gap-2'>
