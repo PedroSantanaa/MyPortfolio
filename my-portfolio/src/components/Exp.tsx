@@ -25,28 +25,28 @@ function Exp({}: Props) {
   }
 
   return (
-    <div className='flex flex-col md:flex-row gap-10 lg:gap-28 mt-14'>
-      <div className='p-10 flex flex-col gap-10'>
+    <div className='flex flex-col md:flex-row gap-6 lg:gap-6 mt-14'>
+      <div className='p-10 flex flex-col gap-7'>
         {experiencias.map((exp)=>(
-          <span key={exp.company} onClick={handleJob} className={`text-black font-bold lg:text-xl cursor-pointer hover:border border-none hover:bg-[#C778DD33] rounded p-3 flex justify-between w-[200px] lg:w-[300px] group ${job === exp.company ? 'border border-none bg-[#C778DD33]' : ''}`}>{exp.company} <p className={`opacity-0 group-hover:opacity-100 ${job === exp.company ? 'opacity-100' : ''}`}> {'>'} </p> </span>
+          <span key={exp.company} onClick={handleJob} className={`text-black font-bold lg:text-lg cursor-pointer hover:border border-none hover:bg-[#C778DD33] rounded p-3 flex justify-between w-[150px] lg:w-[230px] group ${job === exp.company ? 'border border-none bg-[#C778DD33]' : ''}`}>{exp.company} <p className={`opacity-0 group-hover:opacity-100 ${job === exp.company ? 'opacity-100' : ''}`}> {'>'} </p> </span>
         ))}
       </div>
       <div className='text-black'>
         {job && experiencias.filter((exp)=>exp.company===job).map((exp)=>(
           <div key={exp.company}>
             <div className='flex flex-col gap-2'>
-              <p className='text-xl font-bold'>{exp.job}</p>
-              <p className='text-sm'>{exp.subTitle}</p>
-              <p className='text-sm'>{exp.where}</p>
-              <p className='text-sm'>{exp.time}</p>
+              <p className='text-sm xl:text-lg font-bold'>{exp.job}</p>
+              <p className='text-sm xl:text-xl'>{exp.subTitle}</p>
+              <p className='text-sm xl:text-xl'>{exp.where}</p>
+              <p className='text-sm xl:text-xl'>{exp.time}</p>
               <p>{exp.stack.map((stack)=>(
-                <span key={stack} className='border border-white p-1 text-xs rounded mr-2'>{stack}</span>        
+                <span key={stack} className='border border-black p-1 text-xs rounded mr-2'>{stack}</span>        
               ))}</p>
             </div>
-            <div className='flex flex-col gap-3'>
-              <div className='border-t border-gray-400 mt-12 mb-6'></div>
+            <div className='flex flex-col gap-2'>
+              <div className='border-t border-gray-400 mt-6 mb-3'></div>
               {exp.desc.map((desc)=>(
-                <p key={desc} className='text-sm md:text-base'>{`- ${desc}`}</p>
+                <p key={desc} className='text-xs md:text-sm'>{`- ${desc}`}</p>
               ))}
             </div>
             </div>
