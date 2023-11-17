@@ -27,7 +27,7 @@ const Projects = ({titleIcon,projects}:Props) => {
           <div className='flex gap-4'>
             <Image src={'/line4.svg'} alt='line2' width={95} height={2} />
             <h1 className='text-black font-medium text-3xl'><span className='text-[#C778DD]'>{titleIcon}</span>projetos</h1>
-            <Image src={'/line2.svg'} alt='line2' width={167} height={2} />
+            <Image src={'/line2.svg'} alt='line2' width={167} height={2} className='hidden md:block' />
           </div>
         <p className='w-[65%] mt-5'>Aqui estão os projetos que me inspiram. Desde iniciativas transformadoras até soluções criativas para desafios complexos, estes são os trabalhos que refletem minha paixão e excelência. Venha conferir o que fiz, e imagine o que podemos realizar juntos.</p>
         {projects ? (<ProjectCard data={projects}/>) : (<ProjectCard data={projectsBase}/>)}
