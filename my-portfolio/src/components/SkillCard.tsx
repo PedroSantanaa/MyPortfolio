@@ -4,30 +4,20 @@ import React from 'react'
 import Button from './Button'
 
 type Props = {
-  data: Array<{
+  data: {
     title: string,
-    content: string
-  }>
+    imageUrl: string
+  }
 }
 
 const SkillCard = ({data}: Props) => {
   return (
-    <div className='grid grid-rows-6 md:grid-rows-3 lg:grid-rows-2 grid-flow-col gap-4 mx-8 2xl:w-[600px]'>
-      {data.map((item,idx)=>{
-        return(
-          <div key={idx} className='border border-gray-400 flex-col justify-start items-start inline-flex w-[200px]'>       
-              <div className='border-b border-gray-400 p-2 w-full'>
-                <p className='font-medium text-white '>{item.title}</p>
-              </div>
-              <div className='p-2'>
-                <p className='text-[#ABB2BF]'>{item.content}</p>
-              </div>
-          </div>
-        )
-      })}
-      <div></div>
-    </div>
-  )
+     <div className='rounded-md flex flex-col gap-4 justify-center items-center bg-[#00000066] box-shadow-custom w-[64px] h-[72px] md:w-[128px] md:h-[135px] xl:w-[148px] xl:h-[155px]'> 
+        <Image src={data.imageUrl} alt='skills' width={92} height={93} className='w-[43px] h-43px] md:w-[75px] lg:h-[75px] xl:w-full xl:h-full' />
+        <p className='text-white text-[10px] md:text-base'>{data.title}</p>     
+      </div>
+
+    )
 }
 
 export default SkillCard

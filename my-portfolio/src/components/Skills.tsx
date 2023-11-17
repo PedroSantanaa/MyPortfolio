@@ -5,7 +5,7 @@ import SkillCard from './SkillCard'
 
 type Props = {}
 
-const skills = [{title : 'Linguagens', content: 'Javascript Typescript Python C#'}, {title:'Bancos de Dados', content:'MySQL Postgres SqlServer'}, {title:'Ferramentas',content:'VSCode Visual Studio Linux Docker Jenkins Git Figma Github Actions,AWS'}, {title:'Frameworks',content: 'React Express.js NestJs Next.js  '}, {title:'Outros',content:' HTML CSS TAILWINDCSS SCSS BOOTSTRAP'},{title:'Linguas',content:'Português Nativo Inglês Avançado Espanhol Básico'}]
+const skills = [{title : 'Javascript', imageUrl: '/javascript.svg'}, {title:'Typescript', imageUrl:'/type.svg'},{title:'Node.js',imageUrl:'/node.svg'}, {title:'Python',imageUrl:'/python.svg'}, {title:'C#',imageUrl: '/c.svg'}, {title:'MySQL',imageUrl:'/mysql.svg'},{title:'React.js',imageUrl:'/react.svg'},{title:'Next.js',imageUrl:'/next1.svg'},{title:'Tailwind',imageUrl:'/tail.svg'},{title:'PostgreSQL',imageUrl:'/post.svg'},{title:'Docker',imageUrl:'/docker.svg'}]
 const Skills = (props: Props) => {
   return (
     <div className='bg-black h-[720px]'>
@@ -17,7 +17,12 @@ const Skills = (props: Props) => {
               <Image src={'/line2.svg'} alt='line2' width={167} height={2} className='hidden md:block' />
           </div>
         </div>
-        <SkillCard data={skills}/>
+        <p className='font-bold text-[#E0E5EB] text-3xl'>Habilidades que uso para entender e resolver problemas</p>
+        <div className='grid grid-rows-3 lg:grid-rows-2 grid-flow-col gap-6 xl:gap-10 w-fit mx-auto pt-14'>
+          {skills.map((skill, index) => (
+            <SkillCard key={index} data={skill} />
+          ))}
+        </div>
       </div>
     </div>
   )
